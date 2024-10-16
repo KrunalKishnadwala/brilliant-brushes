@@ -12172,3 +12172,36 @@ html:not(.mobile) .owl-animate-fadeInDown{
 .works-grid.grid-intro-2 .work-item .work-descr{
     font-size: 16px;
 }
+
+.im_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.im_modal img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.im_modal-carousel {
+    text-align: center;
+}
+
+.im_modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}

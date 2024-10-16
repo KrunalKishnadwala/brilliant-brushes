@@ -47,17 +47,17 @@
           <!-- Logo  (* Add your text or image to the link tag. Use SVG or PNG image format. 
                     If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
                     image size for support of retina screens. See details in the template documentation. *) -->
-          <div class="nav-logo-wrap local-scroll">
+          <!-- <div class="nav-logo-wrap local-scroll">
             <a href="index.html" class="logo font-alt">
                 Brilliant brushes
-              <!-- <img
+              <img
                 src="images/demo-brutalist/logo-white.svg"
                 alt="Your Company Logo"
                 width="170"
                 height="12"
-              /> -->
+              />
             </a>
-          </div>
+          </div> -->
 
           <!-- Mobile Menu Button -->
           <div class="mobile-nav" role="button" tabindex="0">
@@ -82,7 +82,7 @@
           <div class="container position-relative pt-20 pt-sm-40">
             <h1 class="hs-title-2 font-alt uppercase mb-0">
               <span class="wow charsAnimIn" data-splitting="chars">
-                Selected Works
+                Brilliant brushes
               </span>
               <span
                 class="section-title-image wow fadeScaleIn"
@@ -108,7 +108,7 @@
                 </p>
               </div>
 
-              <div
+              <!-- <div
                 class="col-md-4 col-lg-3 text-end pt-20 pt-md-10 pt-sm-0 local-scroll"
               >
                 <a
@@ -117,7 +117,7 @@
                   data-link-animate="y"
                   >Contact Us <i class="icon-arrow-right size-14"></i
                 ></a>
-              </div>
+              </div> -->
             </div>
 
             <!-- Portfolio Grid -->
@@ -129,20 +129,21 @@
               >
                 <div class="col-md-5 mb-sm-30">
                   <div class="portfolio-1-image">
-                    <a href="brutalist-portfolio-single-dark.html"
+                    <a
                       ><img
                         src="images/demo-brutalist/portfolio/img-1.jpg"
                         loading="lazy"
                         width="700"
                         height="848"
                         alt="Image Description"
+                        onclick="openCarousel('images/demo-brutalist/portfolio/img-1.jpg')"
                     /></a>
                   </div>
                 </div>
                 <div class="col-md-7 d-flex align-items-center">
                   <div>
                     <h3 class="portfolio-1-title font-alt mb-20">
-                      <a href="brutalist-portfolio-single-dark.html"
+                      <a href="index.html"
                         >Medium Scene</a
                       >
                     </h3>
@@ -156,7 +157,7 @@
                           </p>
                         </div>
                       </div>
-                      <div>
+                      <!-- <div>
                         <a
                           href="#"
                           class="link-hover-anim link-circle align-middle"
@@ -164,13 +165,24 @@
                         >
                           See more <i class="icon-arrow-right size-14"></i
                         ></a>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                 </div>
               </div>
               <!-- End Portfolio Item -->
-
+              <div id="carouselModal" class="im_modal">
+                <span class="im_modal-close" onclick="closeCarousel()"
+                  >&times;</span
+                >
+                <div class="im_modal-carousel">
+                  <img
+                    id="carouselImage"
+                    src="images/demo-brutalist/portfolio/img-1.jpg"
+                    alt="Image"
+                  />
+                </div>
+              </div>
               <!-- Portfolio Item -->
               <div
                 class="portfolio-1-item row mb-80 mb-sm-50 wow fadeInUp"
@@ -179,7 +191,7 @@
                 <div class="col-md-6 d-flex align-items-center">
                   <div>
                     <h3 class="portfolio-1-title font-alt mb-20 ms-0">
-                      <a href="brutalist-portfolio-single-dark.html"
+                      <a href="index.html"
                         >Rise of Design</a
                       >
                     </h3>
@@ -192,26 +204,19 @@
                         </p>
                       </div>
                     </div>
-                    <div>
-                      <a
-                        href="brutalist-portfolio-single-dark.html"
-                        class="link-hover-anim link-circle align-middle"
-                        data-link-animate="y"
-                      >
-                        See more <i class="icon-arrow-right size-14"></i
-                      ></a>
-                    </div>
+                    
                   </div>
                 </div>
                 <div class="col-md-6 order-first order-md-last mb-sm-30">
                   <div class="portfolio-1-image">
-                    <a href="brutalist-portfolio-single-dark.html"
+                    <a
                       ><img
                         src="images/demo-brutalist/portfolio/2.jpg"
                         loading="lazy"
                         width="848"
                         height="700"
                         alt="Image Description"
+                        onclick="openCarousel('images/demo-brutalist/portfolio/2.jpg')"
                     /></a>
                   </div>
                 </div>
@@ -225,7 +230,7 @@
               >
                 <div class="col-md-5 mb-sm-30">
                   <div class="portfolio-1-image">
-                    <a href="brutalist-portfolio-single-dark.html"
+                    <a href="index.html"
                       ><img
                         src="images/demo-brutalist/portfolio/3.jpg"
                         loading="lazy"
@@ -238,7 +243,7 @@
                 <div class="col-md-7 d-flex align-items-center">
                   <div>
                     <h3 class="portfolio-1-title font-alt mb-20">
-                      <a href="brutalist-portfolio-single-dark.html"
+                      <a href="index.html"
                         >Visual Stranger</a
                       >
                     </h3>
@@ -252,15 +257,7 @@
                           </p>
                         </div>
                       </div>
-                      <div>
-                        <a
-                          href="brutalist-portfolio-single-dark.html"
-                          class="link-hover-anim link-circle align-middle"
-                          data-link-animate="y"
-                        >
-                          See more <i class="icon-arrow-right size-14"></i
-                        ></a>
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
@@ -275,7 +272,7 @@
                 <div class="col-md-6 d-flex align-items-center">
                   <div>
                     <h3 class="portfolio-1-title font-alt mb-20 ms-0">
-                      <a href="brutalist-portfolio-single-dark.html"
+                      <a href="index.html"
                         >Rise of Design</a
                       >
                     </h3>
@@ -288,20 +285,12 @@
                         </p>
                       </div>
                     </div>
-                    <div>
-                      <a
-                        href="brutalist-portfolio-single-dark.html"
-                        class="link-hover-anim link-circle align-middle"
-                        data-link-animate="y"
-                      >
-                        See more <i class="icon-arrow-right size-14"></i
-                      ></a>
-                    </div>
+                   
                   </div>
                 </div>
                 <div class="col-md-6 order-first order-md-last mb-sm-30">
                   <div class="portfolio-1-image">
-                    <a href="brutalist-portfolio-single-dark.html"
+                    <a href="index.html"
                       ><img
                         src="images/demo-brutalist/portfolio/4.jpg"
                         loading="lazy"
@@ -321,7 +310,7 @@
               >
                 <div class="col-md-5 mb-sm-30">
                   <div class="portfolio-1-image">
-                    <a href="brutalist-portfolio-single-dark.html"
+                    <a href="index.html"
                       ><img
                         src="images/demo-brutalist/portfolio/5.jpg"
                         loading="lazy"
@@ -334,7 +323,7 @@
                 <div class="col-md-7 d-flex align-items-center">
                   <div>
                     <h3 class="portfolio-1-title font-alt mb-10">
-                      <a href="brutalist-portfolio-single-dark.html"
+                      <a href="index.html"
                         >Amplitude</a
                       >
                     </h3>
@@ -348,15 +337,7 @@
                           </p>
                         </div>
                       </div>
-                      <div>
-                        <a
-                          href="brutalist-portfolio-single-dark.html"
-                          class="link-hover-anim link-circle align-middle"
-                          data-link-animate="y"
-                        >
-                          See more <i class="icon-arrow-right size-14"></i
-                        ></a>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -371,23 +352,40 @@
 
       <!-- Footer -->
       <!-- <footer style="padding-top: 20px !important; padding-bottom: 20px !important;" class="page-section footer-2 bg-dark-2 light-content"> -->
-        <div class="container light-content" style="padding-bottom: 20px" >
-          <div class="row">
-            <div class="col-lg-12 text-end text-lg-end local-scroll">
-              <a href="#top" class="fw-top-link">
-                <span class="fw-top-link-underline">Back to top</span>
-                <span class="icon ms-1">
-                  <i class="icon-arrow-up size-17"></i>
-                </span>
-              </a>
-            </div>
+      <div class="container light-content" style="padding-bottom: 20px">
+        <div class="row">
+          <div class="col-lg-12 text-end text-lg-end local-scroll">
+            <a href="#top" class="fw-top-link">
+              <span class="fw-top-link-underline">Back to top</span>
+              <span class="icon ms-1">
+                <i class="icon-arrow-up size-17"></i>
+              </span>
+            </a>
           </div>
         </div>
+      </div>
       <!-- </footer> -->
       <!-- End Footer -->
     </div>
     <!-- End Page Wrap -->
+    <script>
+      // script.js
+      function openCarousel(imageSrc) {
+        document.getElementById("carouselModal").style.display = "flex";
+        renderImage(imageSrc);
+      }
 
+      function closeCarousel() {
+        document.getElementById("carouselModal").style.display = "none";
+        document.removeEventListener("click", outsideClickListener);
+        document.removeEventListener("keydown", escapeKeyListener);
+      }
+
+      function renderImage(imageSrc) {
+        const imageElement = document.getElementById("carouselImage");
+        imageElement.src = imageSrc;
+      }
+    </script>
     <!-- JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
