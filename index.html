@@ -27,25 +27,30 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet" />
+  <!-- <style>
+    .canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+  </style> -->
 
 </head>
 
 <body class="appear-animate dark-mode">
-    <audio id="background-music" autoplay loop>
-        <source src="images/demo-brutalist/happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const audioElement = document.getElementById('background-music');
-            
-            // Optionally, unmute after a short delay if necessary
-            setTimeout(() => {
-                audioElement.muted = false;
-            }, 1000);  // Unmute after 1 second
-        });
-    </script>
+  <!-- <audio id="background-music" autoplay loop>
+    <source src="images/demo-brutalist/happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+ -->
 
   <!-- Page Loader -->
   <div class="page-loader dark">
@@ -56,8 +61,6 @@
   <!-- Skip to Content -->
   <a href="#main" class="btn skip-to-content">Skip to Content</a>
 
-  
-    
   <!-- End Skip to Content -->
 
   <!-- Page Wrap -->
@@ -96,16 +99,22 @@
     <main id="main">
       <!-- Home Section -->
       <section class="page-section parallax-5 light-content"
-        style="background-image: url(images/demo-brutalist/section-bg-1.jpg)" id="home">
+        style="background-image: url(images/demo-brutalist/section-bg-1.jpg); " id="home">
+        <!-- <div class="canvas-container">
+          <canvas id="canvas"></canvas>
+        </div> -->
         <div class="container position-relative pt-20 pt-sm-40">
           <h1 class="hs-title-2 font-alt uppercase mb-0">
             <span class="wow charsAnimIn" data-splitting="chars">
               Brilliant brushes
             </span>
             <span class="section-title-image wow fadeScaleIn" data-wow-delay="0.3s">
-              <img class="wow charsAnimIn" src="images/demo-brutalist/shape-2.svg" alt="" style="transform: rotate(10deg);" />
+              <img class="wow charsAnimIn" src="images/demo-brutalist/shape-2.svg" alt=""
+                style="transform: rotate(10deg);" />
             </span>
           </h1>
+          <audio id="backgroundMusic" src="images/demo-brutalist/happy-birthday-to-you-piano-version-13976.mp3"
+            loop></audio>
         </div>
       </section>
       <!-- End Home Section -->
@@ -123,17 +132,11 @@
               </p>
             </div>
 
-            <div
-                class="col-md-4 col-lg-3 text-end pt-20 pt-md-10 pt-sm-0 local-scroll"
-              >
-                <a
-                  href="https://www.instagram.com/brilliant.brushes__1626/"
-                  target="_blank"
-                  class="link-hover-anim align-middle"
-                  data-link-animate="y"
-                  >Contact Us <i class="icon-arrow-right size-14"></i
-                ></a>
-              </div>
+            <div class="col-md-4 col-lg-3 text-end pt-20 pt-md-10 pt-sm-0 local-scroll">
+              <a href="https://www.instagram.com/brilliant.brushes__1626/" target="_blank"
+                class="link-hover-anim align-middle" data-link-animate="y">Contact Us <i
+                  class="icon-arrow-right size-14"></i></a>
+            </div>
           </div>
 
           <!-- Portfolio Grid -->
@@ -447,34 +450,7 @@
   </main>
   </div>
   <!-- End Page Wrap -->
-  <script>
-    // script.js
-    function openCarousel(imageSrc) {
-      document.getElementById("carouselModal").style.display = "flex";
-      renderImage(imageSrc);
-    }
 
-    function closeCarousel() {
-      document.getElementById("carouselModal").style.display = "none";
-      document.removeEventListener("click", outsideClickListener);
-      document.removeEventListener("keydown", escapeKeyListener);
-    }
-
-    function renderImage(imageSrc) {
-      const imageElement = document.getElementById("carouselImage");
-      imageElement.src = imageSrc;
-    }
-  </script>
-  <!-- <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const audioElement = document.getElementById('background-music');
-            
-            // Unmute the audio after 1 second to comply with browser policies
-            setTimeout(() => {
-                audioElement.muted = false;
-            }, 1000); // 1-second delay
-        });
-    </script> -->
   <!-- JS -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -482,6 +458,7 @@
   <script src="js/jquery.ajaxchimp.min.js"></script>
   <script src="js/contact-form.js"></script>
   <script src="js/all.js"></script>
+  <!-- <script src="js/fire.js"></script> -->
   <!-- End JS -->
 </body>
 
