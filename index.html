@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/png" sizes="any" />
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="images/demo-brutalist/shape-2.svg" type="image/png" sizes="any" />
+  <link rel="icon" href="images/demo-brutalist/shape-2.svg" type="image/svg+xml" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -27,9 +27,26 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet" />
+
 </head>
 
 <body class="appear-animate dark-mode">
+    <audio id="background-music" autoplay loop>
+        <source src="images/demo-brutalist/happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audioElement = document.getElementById('background-music');
+            
+            // Optionally, unmute after a short delay if necessary
+            setTimeout(() => {
+                audioElement.muted = false;
+            }, 1000);  // Unmute after 1 second
+        });
+    </script>
+
   <!-- Page Loader -->
   <div class="page-loader dark">
     <div class="loader">Loading...</div>
@@ -38,6 +55,9 @@
 
   <!-- Skip to Content -->
   <a href="#main" class="btn skip-to-content">Skip to Content</a>
+
+  
+    
   <!-- End Skip to Content -->
 
   <!-- Page Wrap -->
@@ -83,7 +103,7 @@
               Brilliant brushes
             </span>
             <span class="section-title-image wow fadeScaleIn" data-wow-delay="0.3s">
-              <img class="wow charsAnimIn" src="images/demo-brutalist/paintbrush.svg" alt="" style="transform: rotate(10deg);" />
+              <img class="wow charsAnimIn" src="images/demo-brutalist/shape-2.svg" alt="" style="transform: rotate(10deg);" />
             </span>
           </h1>
         </div>
@@ -445,6 +465,16 @@
       imageElement.src = imageSrc;
     }
   </script>
+  <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audioElement = document.getElementById('background-music');
+            
+            // Unmute the audio after 1 second to comply with browser policies
+            setTimeout(() => {
+                audioElement.muted = false;
+            }, 1000); // 1-second delay
+        });
+    </script> -->
   <!-- JS -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
